@@ -69,7 +69,7 @@ class RankingDataset(torch.utils.data.Dataset):
                         new_x = normalizer.transform(x)
                     else:
                         new_x = x
-                    new_y = np.zeros(len(y), dtype=np.float)
+                    new_y = np.zeros(len(y), dtype=float)
                     new_y[rel_doc] = y[rel_doc]
                     if ranking:
                         sort_idx = np.argsort(-new_y)

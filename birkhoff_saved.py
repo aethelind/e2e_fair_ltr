@@ -37,7 +37,7 @@ __version__ = '0.0.6.dev0'
 
 #: Any number smaller than this will be rounded down to 0 when computing the
 #: difference between NumPy arrays of floats.
-TOLERANCE = np.finfo(np.float).eps * 10.
+TOLERANCE = np.finfo(float).eps * 10.
 
 
 def to_permutation_matrix(matches):
